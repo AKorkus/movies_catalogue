@@ -1,0 +1,4 @@
+[{"link": "now_playing", "name": "now playing"},
+    {"link": "upcoming", "name": "upcoming"},
+    {"link": "popular", "name": "popular"},
+    {"link": "top_rated", "name": "top_rated"}]
