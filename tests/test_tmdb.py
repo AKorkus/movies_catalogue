@@ -1,5 +1,6 @@
 import tmdb_client
 from unittest.mock import Mock
+from main import app
 import resources as rr
 
 def test_get_poster_url_uses_default_size():
@@ -61,3 +62,4 @@ def test_poster_cast(monkeypatch):
    monkeypatch.setattr("tmdb_client.get_single_movie_cast", my_mock)
    result = tmdb_client.get_single_movie_cast(2000)
    assert result == rr.kast2
+

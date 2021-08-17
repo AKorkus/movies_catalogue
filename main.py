@@ -5,9 +5,13 @@ import json
 
 app = Flask(__name__)
 
-with open("list_types.json", "r") as f:
-    list_of_lists = json.load(f)
+#with open("list_types.json", "r") as f:
+#    list_of_lists = json.load(f)
 
+list_of_lists = [{"link": "now_playing", "name": "now playing"},
+    {"link": "upcoming", "name": "upcoming"},
+    {"link": "popular", "name": "popular"},
+    {"link": "top_rated", "name": "top_rated"}]
 
 @app.context_processor
 def utility_processor():
